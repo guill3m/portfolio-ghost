@@ -1,0 +1,46 @@
+.work-post {
+  margin: 0 auto;
+  max-width: 1000px;
+
+  h1 {
+    font-family: $font-stack-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    margin: .75em 0 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0 0 .5em;
+  }
+
+  img {
+    &[src*='border=true'] {
+      border: 1px solid $colour-border;
+    }
+  }
+
+  @media (min-width: 600px) {
+    width: 80%;
+
+    img {
+      margin: $spacing -15%;
+      max-width: 130%;
+
+      &[src*='width=half'] {
+        margin-bottom: $spacing / 2;
+        margin-top: $spacing / 2;
+        width: calc(65% - #{$spacing});
+
+        &:nth-of-type(odd) {
+          margin-right: $spacing;
+        }
+
+        &:nth-of-type(even) {
+          margin-left: $spacing;
+        }
+      }
+    }
+  }
+}

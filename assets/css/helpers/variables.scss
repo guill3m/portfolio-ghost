@@ -1,0 +1,22 @@
+// Animations
+$cubic-bezier-ease-in: cubic-bezier(.3, 0, 1, 1);
+$cubic-bezier-ease-out: cubic-bezier(0, 0, .7, 1);
+
+// Colours
+$colour-bg: #fff;
+$colour-txt: #603d20;
+$colour-primary: #f68d2e;
+$colour-primary-light: #fcc89b;
+$colour-highlight: #0077c8;
+$colour-border: #eee;
+
+// Sizing
+$spacing: .5rem;
+$margin-small: $spacing * 4;
+$margin-medium: $spacing * 8;
+$margin-large: $spacing * 12;
+$margin-extralarge: $spacing * 16;
+
+// Typography
+$font-stack-sans: 'Geomanist', sans-serif;
+$font-stack-serif: 'Bw Darius', serif;

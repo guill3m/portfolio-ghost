@@ -1,0 +1,17 @@
+{{!< default}}
+
+<section id="home-about">
+  <img src="{{asset "img/me.svg"}}" alt="A drawn silouethe of myself">
+  <p><strong>Hi. I’m Guillem,</strong> a designer and web developer based in Berlin.<br><a href="/about">More about me</a></p>
+</section>
+
+<section id="home-work">
+  <p>Here are some of the <a href="/work/">things I make</a>:</p>
+  {{#get "posts" filter="tags:work+featured:true" limit="3" as |featured_work|}}
+    <ul class="work-list">
+      {{#foreach featured_work}}
+        {{> "project-thumbnail"}}
+      {{/foreach}}
+    </ul>
+  {{/get}}
+</section>

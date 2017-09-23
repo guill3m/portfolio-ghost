@@ -1,0 +1,23 @@
+html {
+  background: $colour-bg;
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+body {
+  color: $colour-txt;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: baseline;
+}

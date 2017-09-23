@@ -1,0 +1,6 @@
+.DS_Store
+assets/built/
+assets/fonts/
+assets/src/
+node_modules/
+work/

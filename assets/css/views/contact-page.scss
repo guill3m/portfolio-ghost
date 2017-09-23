@@ -1,0 +1,19 @@
+#contact-page {
+  margin: 0 auto;
+  max-width: 1000px;
+
+  h1 {
+    font-family: $font-stack-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    margin: .75em 0 0;
+  }
+
+  a {
+    font-weight: 600;
+  }
+
+  @media (min-width: 600px) {
+    width: 80%;
+  }
+}

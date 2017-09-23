@@ -1,0 +1,52 @@
+#header {
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  margin: $margin-small;
+
+  @media (min-width: 1630px) {
+    margin: $margin-small auto;
+    max-width: 1550px;
+  }
+}
+
+#logo {
+  color: $colour-primary;
+  font-family: $font-stack-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: .9;
+  margin: $spacing $margin-small $spacing 0;
+  text-decoration: none;
+}
+
+#menu {
+  font-weight: 600;
+  margin: $spacing 0;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0;
+  }
+
+  a {
+    color: $colour-primary-light;
+    padding: 0 $spacing;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: $colour-txt;
+    }
+
+    &:active {
+      color: $colour-primary;
+    }
+  }
+}

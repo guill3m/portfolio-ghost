@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="True">
+
+    <title>{{meta_title}}</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset "img/favicon-32.png"}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset "img/favicon-16.png"}}">
+    <link rel="mask-icon" href="{{asset "img/mask-icon.svg"}}" color="#603d20">
+
+    <link rel="stylesheet" type="text/css" href="{{asset "built/main.css"}}">
+
+    {{ghost_head}}
+  </head>
+
+  <body class="{{body_class}}">
+    <header id="header">
+      <a id="logo" href="/">Guillem Andreu.</a>
+      {{#if @blog.navigation}}
+        {{navigation}}
+      {{/if}}
+    </header>
+
+    <main id="main">
+      {{{body}}}
+    </main>
+
+    <footer id="footer">
+      <p><strong>&copy; {{date format="YYYY"}} Guillem Andreu Muñoz.</strong></p>
+      <p>&mdash; Designed and developed by me. <a href="https://github.com/guill3m/portfolio" target="_blank">Check the code.</a></p>
+      <p>&mdash; Text set with <a href="https://brandingwithtype.com/typefaces/darius" target="_blank">Bw Darius</a> and <a href="http://atipofoundry.com/fonts/geomanist" target="_blank">Geomanist</a>.</p>
+      <p>&mdash; Hosted in <a href="https://m.do.co/c/e60fd60f850c" target="_blank" title="Referral link">DigitalOcean</a>.</p>
+    </footer>
+
+    {{ghost_foot}}
+  </body>
+</html>

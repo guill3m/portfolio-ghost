@@ -1,0 +1,38 @@
+html {
+  font-size: calc(.75em + .5vw);
+  text-size-adjust: 100%;
+
+  @media (min-width: 1400px) {
+    font-size: 1.1875em;
+  }
+}
+
+body {
+  font-family: $font-stack-sans;
+  line-height: 1.35;
+}
+
+a {
+  color: $colour-highlight;
+  transition: color 256ms $cubic-bezier-ease-out;
+
+  &:hover,
+  &:focus {
+    color: $colour-txt;
+    transition-timing-function: $cubic-bezier-ease-in;
+  }
+
+  &:active {
+    color: $colour-primary;
+  }
+}
+
+p {
+  margin: .75em 0;
+}
+
+::selection {
+  background: $colour-highlight;
+  color: $colour-bg;
+  text-shadow: none;
+}

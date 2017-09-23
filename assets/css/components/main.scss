@@ -1,0 +1,8 @@
+#main {
+  margin: $margin-small;
+
+  @media (min-width: 1630px) {
+    margin: $margin-small auto;
+    max-width: 1550px;
+  }
+}
