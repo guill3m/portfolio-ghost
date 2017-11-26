@@ -2,7 +2,7 @@
 
 {{#post}}
   <section id="work-list-page">
-    {{#get "posts" filter="tags:work+tags:-unlisted" limit="all" as |projects|}}
+    {{#get "posts" filter="tags:work+tags:-unlisted" limit="all" include="tags" as |projects|}}
       <ul class="work-list">
         {{#foreach projects}}
           {{> "project-thumbnail"}}
