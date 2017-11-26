@@ -41,6 +41,7 @@
     "alex": "^5.1.0",
     "autoprefixer": "^7.1.6",
     "csscomb": "^4.2.0",
+    "cssnano": "^3.10.0",
     "husky": "^0.14.3",
     "node-sass": "^4.7.2",
     "postcss-cli": "^4.1.0",
@@ -52,7 +53,7 @@
   },
   "scripts": {
     "build": "yarn run build:css && yarn run build:js",
-    "build:css": "node-sass --output-style compressed assets/scss/main.scss | postcss --use autoprefixer --no-map --output assets/built/main.css",
+    "build:css": "node-sass assets/scss/main.scss | postcss --use autoprefixer cssnano --no-map --output assets/built/main.css",
     "build:js": "rollup --output.format es assets/js/main.js | babel | uglifyjs --compress --mangle --output assets/built/main.js",
     "clean": "rm assets/built/*",
     "lint": "yarn run lint:js && yarn run lint:sass && yarn run lint:txt",
