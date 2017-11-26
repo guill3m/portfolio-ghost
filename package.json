@@ -42,11 +42,11 @@
   },
   "scripts": {
     "build": "yarn run build:css",
-    "build:css": "node-sass --output-style compressed assets/css/main.scss | postcss --use autoprefixer --no-map --output assets/built/main.css",
+    "build:css": "node-sass --output-style compressed assets/scss/main.scss | postcss --use autoprefixer --no-map --output assets/built/main.css",
     "clean": "rm assets/built/*",
     "lint": "yarn run lint:js && yarn run lint:sass && yarn run lint:txt",
     "lint:js": "standard --verbose | snazzy",
-    "lint:sass": "csscomb assets/css --lint --verbose && sass-lint --verbose",
+    "lint:sass": "csscomb assets/scss --lint --verbose && sass-lint --verbose",
     "lint:txt": "alex */*.hbs *.hbs *.md",
     "precommit": "yarn run lint"
   }
