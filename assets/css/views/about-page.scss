@@ -93,17 +93,17 @@
       }
     }
 
-    > strong {
+    & > strong {
       font-family: $font-stack-serif;
       font-weight: 400;
 
-      > em {
+      & > em {
         font-style: normal;
         font-weight: 700;
       }
     }
 
-    > em {
+    & > em {
       font-size: .75em;
       font-style: normal;
 

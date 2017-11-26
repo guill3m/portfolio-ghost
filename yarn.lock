@@ -201,6 +201,21 @@ babel-code-frame@^6.16.0:
     esutils "^2.0.2"
     js-tokens "^3.0.2"
 
+babel-polyfill@6.23.0:
+  version "6.23.0"
+  resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.23.0.tgz#8364ca62df8eafb830499f699177466c3b03499d"
+  dependencies:
+    babel-runtime "^6.22.0"
+    core-js "^2.4.0"
+    regenerator-runtime "^0.10.0"
+
+babel-runtime@^6.22.0:
+  version "6.26.0"
+  resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
+  dependencies:
+    core-js "^2.4.0"
+    regenerator-runtime "^0.11.0"
+
 bail@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/bail/-/bail-1.0.2.tgz#f7d6c1731630a9f9f0d4d35ed1f962e2074a1764"
@@ -243,7 +258,7 @@ boxen@^1.0.0:
     term-size "^1.2.0"
     widest-line "^1.0.0"
 
-brace-expansion@^1.1.7:
+brace-expansion@^1.0.0, brace-expansion@^1.1.7:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.8.tgz#c07b211c7c952ec1f8efd51a77ef0d1d3990a292"
   dependencies:
@@ -473,6 +488,10 @@ contains-path@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/contains-path/-/contains-path-0.1.0.tgz#fe8cf184ff6670b6baef01a9d4861a5cbec4120a"
 
+core-js@^2.4.0:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.1.tgz#ae6874dc66937789b80754ff5428df66819ca50b"
+
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -519,6 +538,18 @@ cryptiles@2.x.x:
 crypto-random-string@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/crypto-random-string/-/crypto-random-string-1.0.0.tgz#a230f64f568310e1498009940790ec99545bca7e"
+
+csscomb@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/csscomb/-/csscomb-4.2.0.tgz#5f948bc94afa61c033c3984e4192f0e6fef67fdb"
+  dependencies:
+    babel-polyfill "6.23.0"
+    glob latest
+    gonzales-pe "^3.4.7"
+    minimatch "3.0.2"
+    minimist "1.1.x"
+    vow "0.4.4"
+    vow-fs "0.3.6"
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -1223,7 +1254,7 @@ glob-parent@^2.0.0:
   dependencies:
     is-glob "^2.0.0"
 
-glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@~7.1.1:
+glob@^7.0.0, glob@^7.0.3, glob@^7.0.5, glob@latest, glob@~7.1.1:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/glob/-/glob-7.1.2.tgz#c19c9df9a028702d678612384a6552404c636d15"
   dependencies:
@@ -1266,6 +1297,12 @@ globule@^1.0.0:
     glob "~7.1.1"
     lodash "~4.17.4"
     minimatch "~3.0.2"
+
+gonzales-pe@^3.4.7:
+  version "3.4.7"
+  resolved "https://registry.yarnpkg.com/gonzales-pe/-/gonzales-pe-3.4.7.tgz#17c7be67ad6caff6277a3e387ac736e983d280ec"
+  dependencies:
+    minimist "1.1.x"
 
 gonzales-pe@^4.1.1:
   version "4.2.2"
@@ -1952,6 +1989,12 @@ mimic-fn@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.1.0.tgz#e667783d92e89dbd342818b5230b9d62a672ad18"
 
+minimatch@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.2.tgz#0f398a7300ea441e9c348c83d98ab8c9dbf9c40a"
+  dependencies:
+    brace-expansion "^1.0.0"
+
 minimatch@^3.0.0, minimatch@^3.0.2, minimatch@^3.0.3, minimatch@^3.0.4, minimatch@~3.0.2:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/minimatch/-/minimatch-3.0.4.tgz#5166e286457f03306064be5497e8dbb0c3d32083"
@@ -2630,6 +2673,14 @@ redent@^1.0.0:
   dependencies:
     indent-string "^2.1.0"
     strip-indent "^1.0.1"
+
+regenerator-runtime@^0.10.0:
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.10.5.tgz#336c3efc1220adcedda2c9fab67b5a7955a33658"
+
+regenerator-runtime@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.0.tgz#7e54fe5b5ccd5d6624ea6255c3473be090b802e1"
 
 regex-cache@^0.4.2:
   version "0.4.3"
@@ -3413,6 +3464,10 @@ util@^0.10.3:
   dependencies:
     inherits "2.0.1"
 
+uuid@^2.0.2:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-2.0.3.tgz#67e2e863797215530dff318e5bf9dcebfd47b21a"
+
 uuid@^3.0.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.1.0.tgz#3dd3d3e790abc24d7b0d3a034ffababe28ebbc04"
@@ -3467,6 +3522,29 @@ vfile@^2.0.0:
     is-buffer "^1.1.4"
     replace-ext "1.0.0"
     unist-util-stringify-position "^1.0.0"
+
+vow-fs@0.3.6:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/vow-fs/-/vow-fs-0.3.6.tgz#2d4c59be22e2bf2618ddf597ab4baa923be7200d"
+  dependencies:
+    glob "^7.0.5"
+    uuid "^2.0.2"
+    vow "^0.4.7"
+    vow-queue "^0.4.1"
+
+vow-queue@^0.4.1:
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/vow-queue/-/vow-queue-0.4.3.tgz#4ba8f64b56e9212c0dbe57f1405aeebd54cce78d"
+  dependencies:
+    vow "^0.4.17"
+
+vow@0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/vow/-/vow-0.4.4.tgz#c9fe4609129d7f5aa621508ebe64b51c95bc7b98"
+
+vow@^0.4.17, vow@^0.4.7:
+  version "0.4.17"
+  resolved "https://registry.yarnpkg.com/vow/-/vow-0.4.17.tgz#b16e08fae58c52f3ebc6875f2441b26a92682904"
 
 which-module@^1.0.0:
   version "1.0.0"

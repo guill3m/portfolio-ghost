@@ -1,15 +1,23 @@
 @import 'helpers/variables';
+
 @import 'helpers/font-face';
 
 @import 'partials/base';
+
 @import 'partials/typography';
 
 @import 'components/footer';
+
 @import 'components/header';
+
 @import 'components/main';
+
 @import 'components/work-list';
 
 @import 'views/about-page';
+
 @import 'views/contact-page';
+
 @import 'views/home';
+
 @import 'views/work-post';
