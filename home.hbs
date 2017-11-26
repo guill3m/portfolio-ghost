@@ -7,7 +7,7 @@
 
 <section id="home-work">
   <p>Here are some of the <a href="/work/">things I make</a>:</p>
-  {{#get "posts" filter="tags:work+featured:true" limit="3" as |featured_work|}}
+  {{#get "posts" filter="tags:work+featured:true" limit="3" include="tags" as |featured_work|}}
     <ul class="work-list">
       {{#foreach featured_work}}
         {{> "project-thumbnail"}}
